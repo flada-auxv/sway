@@ -12,10 +12,6 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install --source https://github.com/blp1526/sway/raw/master sway
-
 ## Usage
 
 ```ruby
@@ -27,6 +23,7 @@ foo.mashes # if 'path_to_your_json_or_yaml_file' is array.
 
 # If csv, then you have to use option[:header] == :first_line
 bar = Sway::File.new('path_to_your_csv_file', header: :first_line)
+bar.mash #=> nil
 bar.mashes
 
 # You can also do as below.
@@ -34,15 +31,15 @@ baz = Sway::JSON.new('json_string')
 baz.mash # if 'json_string' is hash.
 baz.mashes # if 'json_string' is array.
 
-# If YAML string.
+# When YAML string.
 qux = Sway::YAML.new('yaml_string')
 qux.mash # if 'yaml_string' is hash.
 qux.mashes # if 'yaml_string' is array.
 
-# If CSV string.
+# When CSV string.
 quux = Sway::CSV.new('csv_string', header: :first_line)
-quux.mash
-quux.mashes #=> nil
+quux.mash #=> nil
+quux.mashes
 
 ```
 ## Contributing
