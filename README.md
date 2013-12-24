@@ -1,4 +1,4 @@
-# Sway
+# Sway[![Gem Version](https://badge.fury.io/rb/sway.png)](http://badge.fury.io/rb/sway)
 
 This gem creates Hashie::Mash objects from JSON, YAML, CSV.
 
