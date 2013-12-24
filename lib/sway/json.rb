@@ -1,5 +1,4 @@
 require 'sway/base'
-require 'active_support'
 require 'json'
 
 module Sway

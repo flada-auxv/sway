@@ -1,9 +1,7 @@
 require 'sway/mashable'
-require 'csv'
 
 module Sway
   class Base
-
     include Sway::Mashable
     attr_reader :mash, :mashes
 
