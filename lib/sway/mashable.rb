@@ -1,4 +1,3 @@
-require 'sway/extensions'
 require 'hashie'
 
 module Sway
