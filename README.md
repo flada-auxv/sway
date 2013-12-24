@@ -6,11 +6,15 @@ This gem creates Hashie::Mash objects from JSON, YAML, CSV.
 
 Add this line to your application's Gemfile:
 
-    gem 'sway', git: 'git://github.com/blp1526/sway.git'
+    gem 'sway'
 
 And then execute:
 
     $ bundle
+
+Or install it yourself as:
+
+    $ gem install sway
 
 ## Usage
 
